@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/stencil-test.esm.js"></script>
+    <!-- <script defer src="/build/meetingStore-56af73a3.js"></script> -->
+    <script nomodule src="/build/stencil-test.js"></script>
+    <!-- <script type="module"> -->
+    <!--   import { D as DyteClient } from '/build/meetingStore-56af73a3.js'; -->
+    <!--   //TODO: Figure out why isnt this working -->
+    <!--   console.log('here'); -->
+    <!--   const meeting = DyteClient.init('roomName', 'authToken'); -->
+    <!-- </script> -->
+  </head>
+  <body>
+    <!-- <component-provider first="something"> -->
+    <!--   <p>something2</p> -->
+    <!--   <component-consumer> -->
+    <!--     <p>something3</p> -->
+    <!--   </component-consumer> -->
+    <!-- </component-provider> -->
+
+    <!-- <component-consumer> -->
+    <!--   <p>something3</p> -->
+    <!-- </component-consumer> -->
+
+    <!-- <comp-provider> -->
+    <!--   <comp-consumer></comp-consumer> -->
+    <!-- </comp-provider> -->
+
+    <!-- <comp-provider> -->
+    <!-- </comp-provider> -->
+
+    <!-- <comp-consumer></comp-consumer> -->
+
+    <dyte-meeting>
+    </dyte-meeting>
+
+    <dyte-meeting>
+      <dyte-participant>
+        <dyte-participant-video> </dyte-participant-video>
+        <dyte-participant-video-disabled> </dyte-participant-video-disabled>
+      </dyte-participant>
+      <dyte-participant>
+        <dyte-participant-video> </dyte-participant-video>
+      </dyte-participant>
+    </dyte-meeting>
+
+    <!-- <component-consumer> -->
+    <!--   <p>Sole Consumer</p> -->
+    <!-- </component-consumer> -->
+    <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+  </body>
+</html>
